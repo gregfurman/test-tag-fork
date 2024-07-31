@@ -15,4 +15,4 @@ jobs:
         steps:
             - name: Echo
               run:
-                  echo "hello World v1"
+                  echo "hello World $GITHUB_REF"
