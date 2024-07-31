@@ -1,0 +1,16 @@
+# Terraform Provider release workflow.
+name: Release
+
+on:
+    push: main
+
+permissions:
+    contents: write
+
+jobs:
+    goreleaser:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Echo
+              run:
+                  echo "hello World"
